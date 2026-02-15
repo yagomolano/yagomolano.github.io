@@ -13,6 +13,7 @@ interface Work {
   url: string;
   tags?: string[];
   video?: string;
+  youtube?: string;
   isShow?: boolean;
 }
 
@@ -40,6 +41,7 @@ if (limit !== undefined) {
           url={work.url}
           tags={work.tags}
           video={work.video}
+          youtube={work.youtube}
           isShow={work.isShow}
           layout="featured"
           index={index}

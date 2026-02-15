@@ -1,0 +1,32 @@
+---
+title: Simulator
+publishDate: 2024-03-01
+description: Developing a high-accuracy proprietary simulator for orbital dynamics and mission validation.
+tags:
+  - Simulation
+  - Dynamics
+  - Physics
+  - Earth Gravity
+img: "/assets/media/roboticsroom.png"
+img_alt: "Simulator"
+---
+
+Leading engineer in developing the dynamics side of the simulator in use at our company! Developed a fully proprietary simulator with high accuracies, validating accuracies against historical missions.
+
+### Specs
+
+Integrator: choose between Runge-Kutta-Fehlberg 7(8) (recommended) and lower order Runge-Kutta options.
+
+Force Model:
+- gravity field of the Earth (GGM03C model) - choose number of harmonics.
+- gravity of the solar system planets (JPLDE440)
+- drag effect using NRLMSISE-00
+- solar radiation pressure using a conical, geometrical, or cylindrical shadow model
+- solid Earth tides (IERS Conventions 2010)
+- ocean tides
+- general relativity
+- ECEF2ECI and ECI2ECEF transformations using IAU 2006 Resolutions
+- Runge-Kutta-Munthe-Kaas Quaternion Integrator (no normalisation error).
+- Built-in attitude controller/torque input available.
+- Thruster inputs
+- Custom perturbation inputs

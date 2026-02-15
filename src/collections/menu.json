@@ -4,12 +4,16 @@
 		"url": "/"
 	},
 	{
-		"name": "Writing",
-		"url": "/blog"
+		"name": "Projects",
+		"url": "/works"
 	},
 	{
-		"name": "Works",
-		"url": "/works"
+		"name": "Resources",
+		"url": "/resources"
+	},
+	{
+		"name": "Obsidian",
+		"url": "/obsidian"
 	},
 	{
 		"name": "About",

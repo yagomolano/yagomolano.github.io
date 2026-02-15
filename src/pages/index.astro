@@ -11,30 +11,34 @@ import Explore from "@/components/sections/Explore.astro";
 ---
 
 <Layout
-title="Rico Portfolio Site 2025"
-description="Welcome to Rico's portfolio site! Explore my work as a web/UI designer with 8+ years of experience in creating captivating visuals and interactive experiences."
-keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative Designer"
+  title="Yago Molano"
+  description="Welcome to Yago's portfolio site! Explore my work as a GNC engineer in space robotics."
+  keywords="Yago, Portfolio, GNC, Robotics, Space, Engineer"
 >
   <div
-    class="relative site-container z-20  w-full mx-auto mt-16 px-4 md:mt-18 lg:mt-20 xl:px-0"
+    class="relative site-container z-20 w-full mx-auto mt-16 px-4 md:mt-18 lg:mt-20 xl:px-0"
   >
-    <div class="relative w-full px-4 flex flex-col items-center justify-between md:flex-row mb-16 ">
-      <div class="relative w-full md:max-w-[420px] md:w-1/2 text-center sm:text-left sm:-mt-8">
+    <div
+      class="relative w-full px-4 flex flex-col items-center justify-between md:flex-row mb-16"
+    >
+      <div
+        class="relative w-full md:max-w-[420px] md:w-1/2 text-center sm:text-left sm:-mt-8"
+      >
         <!-- Title - AnimatedText animation -->
         <h1 class="mb-4">
           <AnimatedText
-            content="Hi, I'm Rico"
+            content="Hi, I'm Yago"
             delay={0.1}
             duration={0.5}
             stagger={0.08}
-            class="text-5xl text-pri leading-tight md:text-4xl lg:text-6xl font-brand "
+            class="text-5xl text-pri leading-tight md:text-4xl lg:text-6xl font-brand"
           />
         </h1>
 
         <!-- First description - AnimatedText animation -->
         <div class="mb-2">
           <AnimatedText
-            content="I'm a web/UI designer with 8+ years of experience. I love blending design and code to create captivating visuals and interactive experiences."
+            content="I’m a futurist who found his calling in the precision of Guidance, Navigation, and Control (GNC) engineering."
             delay={0.3}
             duration={0.5}
             stagger={0.015}
@@ -45,25 +49,12 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         <!-- Second description - AnimatedText animation -->
         <div class="mb-4">
           <AnimatedText
-            content="I believe great design should be both delightful and solve real-world challenges."
+            content="Currently, I’m at Lúnasa, where I develop the autonomous brains for the next generation of space robotics—specifically, the high-precision algorithms enabling complex satellite rendezvous and docking missions."
             delay={0.5}
             duration={0.5}
             stagger={0.015}
             class="text-base text-neutral-700 dark:text-neutral-300"
           />
-        </div>
-
-        <!-- Button - AOS animation -->
-        <div
-          class=""
-          data-aos="fade-up-sm"
-          data-aos-delay="900"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          <Button url={siteConfig.social.twitter} type="fill" className="m-auto mt-4 text-center sm:text-left sm:m-0 sm:mt-6 max-w-[200px]">
-            Follow me on 𝕏
-          </Button>
         </div>
 
         <!-- Social Cards - AOS animation -->
@@ -74,7 +65,7 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
           data-aos-duration="600"
           data-aos-once="true"
         >
-          <SocialCard displaySocialIds={[1, 2, 3,4]}/>
+          <SocialCard displaySocialIds={[1, 2, 3]} />
         </div>
       </div>
 
@@ -87,23 +78,23 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
         data-aos-once="true"
       >
         <HeroCard
-          imageUrl="/assets/home/gradientshub.jpg"
-          title="Gradientshub"
-          link="https://gradientshub.com"
+          imageUrl="/assets/media/roboticsroom.png"
+          title="Robotics Room"
+          link="/work/robotics-room"
         />
       </div>
     </div>
   </div>
 
-  <section
+  <!-- <section
     class="mt-26 mb-12"
     data-aos="fade-up-sm"
     data-aos-delay="100"
     data-aos-duration="600"
     data-aos-once="true"
   >
-    <Explore title="Explore ↓"  />
-  </section>
+    <Explore title="Explore ↓" />
+  </section> -->
 
   <section
     class="mt-26 mb-12"
@@ -112,10 +103,14 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
     data-aos-duration="600"
     data-aos-once="true"
   >
-    <FeaturedWork title="Featured Work ↓" description="I create innovative and purposeful designs that not only capture attention but also drive meaningful results." limit={5} />
+    <FeaturedWork
+      title="Featured Work ↓"
+      description="A selection of the technical and creative projects I've led or contributed to, from advanced space robotics to competitive engineering missions."
+      limit={6}
+    />
   </section>
 
-  <section
+  <!-- <section
     class="mt-26 mb-12"
     data-aos="fade-up-sm"
     data-aos-delay="100"
@@ -127,6 +122,5 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
       description="These are my notes and articles on design, development and life thinking."
       showViewAllButton={true}
     />
-  </section>
-
+  </section> -->
 </Layout>

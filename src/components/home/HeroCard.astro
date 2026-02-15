@@ -4,13 +4,17 @@ interface Props {
   imageUrl: string; // Required
   title?: string; // Optional, default "Home"
   link?: string; // Optional, can be empty
+  video?: string; // Optional - local video file
+  youtube?: string; // Optional - YouTube video ID
 }
 
 // Set default values and receive incoming properties
 const {
   imageUrl,
   title = "Home",
-  link = ""
+  link = "",
+  video,
+  youtube
 } = Astro.props;
 ---
 
@@ -26,12 +30,33 @@ const {
 
         <div class="relative z-20 w-full">
             <div class="relative top-0 left-0 w-full aspect-[6/7] overflow-hidden rounded-xl case-go">
-                <img
-                src={imageUrl}
-                loading="eager"
-                decoding="auto"
-                class="absolute top-0 left-0 right-0 z-30 w-full mx-auto object-cover"
-                />
+                {youtube ? (
+                    <iframe
+                        src={`https://www.youtube.com/embed/${youtube}?autoplay=1&mute=1&loop=1&playlist=${youtube}&modestbranding=1&rel=0&controls=0&showinfo=0`}
+                        title={title}
+                        class="absolute top-0 left-0 w-full h-full"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                ) : video ? (
+                    <video
+                        src={video}
+                        poster={imageUrl}
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        class="absolute top-0 left-0 w-full h-full object-cover"
+                    ></video>
+                ) : (
+                    <img
+                    src={imageUrl}
+                    loading="eager"
+                    decoding="auto"
+                    class="absolute top-0 left-0 right-0 z-30 w-full mx-auto object-cover"
+                    />
+                )}
             </div>
         </div>
     </div>

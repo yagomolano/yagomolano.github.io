@@ -1,0 +1,24 @@
+---
+title: Robotics Room
+publishDate: 2024-01-01
+description: Building a hardware-in-the-loop robotics lab for testing computer vision and guidance algorithms.
+tags:
+  - Robotics
+  - HIL
+  - Simulation
+  - GNC
+img: "/assets/media/roboticsroom.png"
+img_alt: "Robotics Room Setup"
+---
+
+In Lunasa Space, we had a problem: how can we run a hardware-in-the-loop and test that our computer vision algorithms, filters, guidance algorithms and controllers are all working well together?
+
+To solve this, we decided to build our own lab! (quite literally, look out for my linkedin/twitter post showing the timelapse lifting panels and screwing them together, sticking the black fabric...).
+
+The final product turned out pretty well!
+
+During the design and installation of the room, I mostly took a supporting role. My role here was building the simulator running everything behind the scenes, doing all the frames transformations for transforming the RTN satellite positions into the actual position of the robots in the room and... *lots* of quaternion debugging... *too many* quaternion bugs. fun fact: taking into account algebraic definition, storage order, function of rotation, handedness, and basis vector mapping, you can define a quaternion in 384 ways... And it seems like every person chooses a different convention!
+
+In addition, I was responsible for a lot of the development of the "flight code" in the chaser satellite, check out [RPO Kit development](/blog/rpo-kit-development)!
+
+![Robotics Room](/assets/media/roboticsroom.png)

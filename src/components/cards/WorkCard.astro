@@ -5,8 +5,9 @@ interface Props {
   url: string;          // Required
   description?: string;  // Optional
   tags?: string[];      // Optional
-  video?: string;       // Optional
-  isShow?: boolean;     // Optional, default true
+  video?: string;       // Optional - local video file
+  youtube?: string;      // Optional - YouTube video ID
+  isShow?: boolean;      // Optional, default true
   layout?: 'featured' | 'grid'; // featured is full width, grid is two columns
   index?: number;
   target?: string;      // Optional, default "_blank"
@@ -19,6 +20,7 @@ const {
   image,
   tags = [],
   video,
+  youtube,
   isShow = true,
   layout = 'grid',
   index = 0,
@@ -41,8 +43,18 @@ const videoId = `workcard-video-${index}-${name.replace(/[^a-z0-9]+/gi, '-').toL
 >
   <!-- Image/video container -->
   <div class="relative overflow-hidden aspect-video rounded-xl">
-    {video ? (
-      <!-- Video -->
+    {youtube ? (
+      <!-- YouTube Video -->
+      <iframe
+        src={`https://www.youtube.com/embed/${youtube}?start=10&end=55&autoplay=1&mute=1&loop=1&playlist=${youtube}&modestbranding=1&rel=0&controls=0&showinfo=0&fs=0&iv_load_policy=3`}
+        title={name}
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    ) : video ? (
+      <!-- Local Video -->
       <video
         id={videoId}
         src={video}

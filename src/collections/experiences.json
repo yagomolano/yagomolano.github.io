@@ -1,17 +1,30 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Leading the design of user-centric web applications and dating platforms.",
-		"logo": "/assets/experiences/company.jpg"
+		"dates": "Nov 2024 – Present",
+		"role": "GNC Engineer",
+		"company": "Lúnasa Space",
+		"description": "Designing full GNC architecture for RPO satellite, integrating CV-based relative pose sensors with optimal guidance and navigation algorithms for autonomous rendezvous. Built a real-time HPOP propagator (20 cm error per orbit) and developed EKF/UKF for state estimation, achieving 5 cm GNSS-only accuracy.",
+		"logo": "/assets/avatar.png"
 	},
 	{
-		"dates": "July 2016 · June 2017",
-		"role": "Web & Product Designer",
-		"company": "Company Name",
-		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
-		"logo": "/assets/experiences/company.jpg"
+		"dates": "Sep 2023 – June 2024",
+		"role": "GNC/AOCS Engineer (Thesis Intern)",
+		"company": "Airbus Defence & Space",
+		"description": "Researched novel autonomous, robust, and highly accurate GNC solutions for robotic lunar landers. Successfully engineered the first efficient, mathematically-robust optimal control algorithm for lunar landing.",
+		"logo": "/assets/avatar.png"
+	},
+	{
+		"dates": "Sep 2022 – Sep 2023",
+		"role": "Satellite Systems Engineer",
+		"company": "ST Engineering",
+		"description": "Spearheaded research on VLEO (Very Low Earth Orbit) concepts, catalyzing a full-team project. Designed an optimization algorithm to parametrize subsystems, achieving an 80% satellite mass reduction.",
+		"logo": "/assets/avatar.png"
+	},
+	{
+		"dates": "July 2020 – Oct 2022",
+		"role": "Strategy Officer & Co-founder. Levitation, Dynamics and Braking Lead",
+		"company": "Imperial College Hyperloop (ICLoop)",
+		"description": "Co-founded and led a team of 120+ students to develop a Hyperloop prototype. Optimized key components (Hallback array, pod suspension) using MATLAB and SIMULINK to enhance system performance.",
+		"logo": "/assets/avatar.png"
 	}
-
 ]

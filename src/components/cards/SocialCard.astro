@@ -79,15 +79,16 @@ const filteredSocial = social.filter(item => {
     width: 72px;
     height: 72px;
   }
-  /* 桌面端：堆叠效果 */
+  /* 桌面端：堆叠效果 - 改为始终展开 */
   @media (min-width: 769px) {
     .social-item {
-      position: absolute;
-      left: 0;
-      /* 初始状态：重叠 + 向右轻微旋转 */
-      transform: translateX(calc(var(--index) * 3px)) rotate(calc(var(--index) * 5deg));
+      position: relative;
+      left: auto;
+      /* 初始状态：并排显示，无旋转 */
+      transform: none;
       /* ID 越小的 z-index 越大（在最上面）*/
-      z-index: calc(var(--total) - var(--index));
+      z-index: auto;
+      margin-right: 12px;
     }
   }
 
@@ -100,28 +101,11 @@ const filteredSocial = social.filter(item => {
     }
   }
 
-  /* 桌面端悬停效果：向右展开 */
+  /* 桌面端悬停效果：保持并排，只轻微上移 */
   @media (min-width: 769px) {
-    .social-list:hover .social-item {
-      /* 向右展开：ID 1 保持原地，后面的依次向右 */
-      transform: translateX(calc(var(--index) * 85px)) rotate(0deg);
-      /* 展开时反转 z-index：右边的卡片在上面，避免回弹时的重叠闪烁 */
-      z-index: calc(var(--index) + 100);
-      /* 展开时立即切换 z-index，回收时延迟切换 */
-      transition: transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1),
-                  z-index 0s linear 0s,
-                  box-shadow 0.3s ease;
-      transition-delay: calc(var(--index) * 0.03s);
-    }
-
-    .social-list:hover .social-item:hover {
-      /* 当前悬停的卡片：向上弹起 + 轻微旋转 */
-      transform: translateX(calc(var(--index) * 80px)) translateY(-10px) rotate(-6deg) scale(1.05);
+    .social-item:hover {
+      transform: translateY(-5px);
       z-index: 9999;
-      /* 悬停时缩短过渡时间，反应更灵敏 */
-      transition: transform 0.35s cubic-bezier(0.34, 1.5, 0.64, 1),
-                  z-index 0s linear 0s,
-                  box-shadow 0.3s ease;
     }
   }
 

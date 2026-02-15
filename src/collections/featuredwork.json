@@ -1,58 +1,71 @@
 [
 	{
-		"name": "RicoOG",
-		"description": "OG Inspiration Library",
-		"tags": ["Open Graph", "Design", "Library"],
-		"image": "/assets/works/ricoog.jpg",
-		"video": "/assets/works/ricoog.mp4",
-		"url": "https://ricoog.com/",
+		"name": "Robotics Room",
+		"description": "Hardware-in-the-loop robotics lab for computer vision and guidance algorithms.",
+		"tags": [
+			"Robotics",
+			"HIL",
+			"Simulation"
+		],
+		"image": "/assets/media/roboticsroom.png",
+		"url": "/work/robotics-room",
 		"isShow": true
 	},
 	{
-		"name": "GradientsHub",
-		"description": "Gradient Resources & Tools",
-		"tags": ["Gradient","Resources","Tools"],
-		"image": "/assets/works/gradientshub.jpg",
-		"video": "/assets/works/gradientshub.mp4",
-		"url": "https://gradientshub.com"
+		"name": "RPO Kit Development",
+		"description": "High-precision orbit propagation and filter development.",
+		"tags": [
+			"GNC",
+			"RPO",
+			"Filtering"
+		],
+		"image": "/assets/media/rpokit.png",
+		"video": "/assets/media/rpokitvid.mp4",
+		"url": "/work/rpo-kit-development"
 	},
 	{
-		"name": "Luon Models",
-		"description": "Company Website",
-		"tags": ["Company","Website","Branding"],
-		"image": "/assets/works/luonmodels.jpg",
-		"video": "/assets/works/luonmodels.mp4",
-		"url": "https://luonmodels.netlify.app/"
+		"name": "Robust Optimal Control",
+		"description": "Master's thesis on local reduction methods for lunar landing.",
+		"tags": [
+			"Control Theory",
+			"Optimization",
+			"GNC"
+		],
+		"image": "/assets/media/robustcontrol.png",
+		"video": "/assets/media/mastersthesisvid.mp4",
+		"url": "/work/robust-optimal-control"
 	},
 	{
-		"name": "Ricoui",
-		"description": "Designer Portfolio",
-		"tags": ["Designer","Portfolio","Open Source"],
-		"image": "/assets/works/ricoui.jpg",
-		"video": "/assets/works/ricoui.mp4",
-		"url": "/work/ricoblog2024"
-
+		"name": "VLEO Satellite Mission",
+		"description": "Feasibility study for VLEO synthetic aperture radar mission.",
+		"tags": [
+			"Space Mission",
+			"VLEO",
+			"SAR"
+		],
+		"image": "/assets/media/vleosatellite.png",
+		"url": "/work/vleo-satellite-mission"
 	},
 	{
-		"name": "3D Valentines Assets",
-		"description": "Blender Design Resources & Assets",
-		"tags": ["3D","Resources","Assets"],
-		"image": "/assets/works/3d-valentines.jpg",
-		"video": "/assets/works/3d-valentines.mp4",
-		"url": "/work/3dvalentine"
+		"name": "Hyperloop",
+		"description": "Levitation and control design for Hyperloop competition vehicle.",
+		"tags": [
+			"Hyperloop",
+			"Control",
+			"Design"
+		],
+		"image": "/assets/media/hyperloop.png",
+		"youtube": "U5VuBan-JwM",
+		"url": "/work/hyperloop"
 	},
 	{
-		"name": "UIUXDECK",
-		"description": "Design Resources & Tools",
-		"tags": ["Design","Resources","Tools"],
-		"image": "/assets/works/uiuxdeck.jpg",
-		"url": "http://uiuxdeck.com/"
-	},
-	{
-		"name": "Inspoweb",
-		"description": "Web Inspiration Library",
-		"tags": ["Inspiration","Web Collection"],
-		"image": "/assets/works/inspoweb.jpg",
-		"url": "https://inspoweb.com/"
+		"name": "Aerocapture Mars",
+		"description": "Interplanetary trajectory design for Mars aerocapture mission.",
+		"tags": [
+			"Astrodynamics",
+			"Trajetory Design"
+		],
+		"image": "/assets/media/marsaerocapture.png",
+		"url": "/work/aerocapture-mars"
 	}
 ]
