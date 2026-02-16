@@ -4,20 +4,23 @@
 		"name": "Github",
 		"username": "yagomolano",
 		"image": "/assets/social/social-github.jpg",
-		"url": "https://github.com/yagomolano"
+		"url": "https://github.com/yagomolano",
+		"isShow": true
 	},
 	{
 		"id": 2,
 		"name": "LinkedIn",
 		"username": "yago-molano",
 		"image": "/assets/social/social-linkedin.jpeg",
-		"url": "https://www.linkedin.com/in/yago-molano/"
+		"url": "https://www.linkedin.com/in/yago-molano/",
+		"isShow": true
 	},
 	{
 		"id": 3,
 		"name": "Email",
 		"username": "yagomolano",
 		"image": "/assets/social/social-email.jpg",
-		"url": "mailto:yagomolano@gmail.com"
+		"url": "mailto:yagomolano@gmail.com",
+		"isShow": true
 	}
 ]

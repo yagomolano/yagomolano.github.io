@@ -2,19 +2,7 @@
 import social from "@/collections/social.json";
 const { displaySocialIds } = Astro.props;
 
-// Define type to include optional isShow
-interface SocialItem {
-  id: number;
-  name: string;
-  username: string;
-  image: string;
-  url: string;
-  isShow?: boolean;
-}
-
-const socialItems = social as SocialItem[];
-
-const filteredSocial = socialItems.filter((item: SocialItem) => {
+const filteredSocial = social.filter((item: typeof social[number]) => {
   if (item.isShow === false) return false;
   if (displaySocialIds.length > 0) {
     return displaySocialIds.includes(item.id);
