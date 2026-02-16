@@ -1,11 +1,20 @@
 ---
 import social from "@/collections/social.json";
 const { displaySocialIds } = Astro.props;
-// 配置要显示的社交媒体 ID（留空则显示所有）
-//const displaySocialIds: number[] = [1, 2, 3]; // 只显示 ID 为 1, 2, 3 的社交媒体
-// const displaySocialIds: number[] = []; // 显示所有（当数组为空时）
 
-const filteredSocial = social.filter(item => {
+// Define type to include optional isShow
+interface SocialItem {
+  id: number;
+  name: string;
+  username: string;
+  image: string;
+  url: string;
+  isShow?: boolean;
+}
+
+const socialItems = social as SocialItem[];
+
+const filteredSocial = socialItems.filter((item: SocialItem) => {
   if (item.isShow === false) return false;
   if (displaySocialIds.length > 0) {
     return displaySocialIds.includes(item.id);
