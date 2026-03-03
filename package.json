@@ -1,32 +1,26 @@
 {
-	"name": "astro-rico-portfolio",
+	"name": "yagomolano-portfolio",
 	"type": "module",
 	"version": "1.0.0",
-	"description": "A modern, high-performance portfolio website template for designers built with Astro. Features retro blue theme, dark mode, and beautiful animations.",
+	"description": "Portfolio website of Yago Molano",
 	"keywords": [
 		"astro",
 		"portfolio",
-		"designer",
-		"website",
-		"template",
-		"tailwindcss",
-		"blog",
-		"dark-mode",
-		"responsive"
+		"gnc"
 	],
 	"author": {
-		"name": "Ricoui",
-		"email": "hello@ricoui.com",
-		"url": "https://ricoui.com"
+		"name": "Yago Molano",
+		"email": "yagomolano@gmail.com",
+		"url": "https://yagomolano.github.io"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ricocc/ricoui-portfolio.git"
+		"url": "https://github.com/yagomolano/yagomolano.github.io.git"
 	},
 	"bugs": {
-		"url": "https://github.com/ricocc/ricoui-portfolio/issues"
+		"url": "https://github.com/yagomolano/yagomolano.github.io/issues"
 	},
-	"homepage": "https://github.com/ricocc/ricoui-portfolio#readme",
+	"homepage": "https://yagomolano.github.io",
 	"license": "Apache-2.0",
 	"scripts": {
 		"dev": "astro dev",

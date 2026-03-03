@@ -4,10 +4,8 @@ import { siteConfig } from "@/config/site";
 import HeroCard from "@/components/home/HeroCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import FeaturedWork from "../components/sections/FeaturedWork.astro";
-import BlogSection from "@/components/sections/BlogSection.astro";
 import SocialCard from "@/components/cards/SocialCard.astro";
 import AnimatedText from "@/components/ui/AnimatedText.astro";
-import Explore from "@/components/sections/Explore.astro";
 ---
 
 <Layout
@@ -27,7 +25,7 @@ import Explore from "@/components/sections/Explore.astro";
         <!-- Title - AnimatedText animation -->
         <h1 class="mb-4">
           <AnimatedText
-            content="Hi, I'm Yago"
+            content="Hi! I'm Yago"
             delay={0.1}
             duration={0.5}
             stagger={0.08}
@@ -38,7 +36,7 @@ import Explore from "@/components/sections/Explore.astro";
         <!-- First description - AnimatedText animation -->
         <div class="mb-2">
           <AnimatedText
-            content="I’m a futurist who found his calling in the precision of Guidance, Navigation, and Control (GNC) engineering."
+            content="Thank you for visiting my small corner of the internet. I'm a futurist turned by chance or fate into a guidance, navigation and control engineer! 🚀"
             delay={0.3}
             duration={0.5}
             stagger={0.015}
@@ -49,12 +47,45 @@ import Explore from "@/components/sections/Explore.astro";
         <!-- Second description - AnimatedText animation -->
         <div class="mb-4">
           <AnimatedText
-            content="Currently, I’m at Lúnasa, where I develop the autonomous brains for the next generation of space robotics—specifically, the high-precision algorithms enabling complex satellite rendezvous and docking missions."
+            content="Currently I'm at Lúnasa, developing the autonomous brains for the next generation of space robotics. We are focused on the high-precision algorithms necessary to enable non-cooperative rendezvous and docking missions."
             delay={0.5}
             duration={0.5}
             stagger={0.015}
             class="text-base text-neutral-700 dark:text-neutral-300"
           />
+        </div>
+
+        <!-- Third description -->
+        <div
+          class="mb-4 text-base text-neutral-700 dark:text-neutral-300"
+          data-aos="fade-up-sm"
+          data-aos-delay="700"
+        >
+          In this site, you can browse my cool <a
+            href="/works"
+            class="font-bold underline text-primary dark:text-primary-dark cursor-pointer case-go"
+            >projects</a
+          >! Aside from engineering, I really enjoy tennis, padel, sailing,
+          reading and chess. Always looking for good books, so for more info and
+          my Goodreads check out the <a
+            href="/about"
+            class="font-bold underline text-primary dark:text-primary-dark cursor-pointer case-go"
+            >About</a
+          > page.
+        </div>
+
+        <!-- Fourth description -->
+        <div
+          class="mb-4 text-base text-neutral-700 dark:text-neutral-300"
+          data-aos="fade-up-sm"
+          data-aos-delay="800"
+        >
+          Finally, I am trying to join the "learning publicly" movement, so
+          check out my obsidian for a (very messy!) insight into my brain, and <a
+            href="/resources"
+            class="font-bold underline text-primary dark:text-primary-dark cursor-pointer case-go"
+            >Resources</a
+          >!
         </div>
 
         <!-- Social Cards - AOS animation -->
@@ -86,16 +117,6 @@ import Explore from "@/components/sections/Explore.astro";
     </div>
   </div>
 
-  <!-- <section
-    class="mt-26 mb-12"
-    data-aos="fade-up-sm"
-    data-aos-delay="100"
-    data-aos-duration="600"
-    data-aos-once="true"
-  >
-    <Explore title="Explore ↓" />
-  </section> -->
-
   <section
     class="mt-26 mb-12"
     data-aos="fade-up-sm"
@@ -109,18 +130,4 @@ import Explore from "@/components/sections/Explore.astro";
       limit={6}
     />
   </section>
-
-  <!-- <section
-    class="mt-26 mb-12"
-    data-aos="fade-up-sm"
-    data-aos-delay="100"
-    data-aos-duration="600"
-    data-aos-once="true"
-  >
-    <BlogSection
-      title="Latest Articles  ↓"
-      description="These are my notes and articles on design, development and life thinking."
-      showViewAllButton={true}
-    />
-  </section> -->
 </Layout>

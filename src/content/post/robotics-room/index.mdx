@@ -13,12 +13,26 @@ img_alt: "Robotics Room Setup"
 
 In Lunasa Space, we had a problem: how can we run a hardware-in-the-loop and test that our computer vision algorithms, filters, guidance algorithms and controllers are all working well together?
 
-To solve this, we decided to build our own lab! (quite literally, look out for my linkedin/twitter post showing the timelapse lifting panels and screwing them together, sticking the black fabric...).
+To solve this, we decided to build our own lab! (quite literally, look out for my linkedin/twitter post showing the timelapse lifting panels and screwing them together).
 
-The final product turned out pretty well!
+The final product turned out pretty well! Some cool specs:
 
-During the design and installation of the room, I mostly took a supporting role. My role here was building the simulator running everything behind the scenes, doing all the frames transformations for transforming the RTN satellite positions into the actual position of the robots in the room and... *lots* of quaternion debugging... *too many* quaternion bugs. fun fact: taking into account algebraic definition, storage order, function of rotation, handedness, and basis vector mapping, you can define a quaternion in 384 ways... And it seems like every person chooses a different convention!
+| Arm Payload capacity | Up to 30 kg |
+| :-- | :-- |
+| Degrees of Freedom | 6 DoF arms + extra DoF from the axis |
+| Accuracy | 0.05 mm |
+| Length of testbed | 7 m |
+| Arm reach | Up to 1.3 m |
+| Software Compatibility | ROS2, Python |
+| Control Frequency | 500 Hz |
+| Motion Sensors and Tracking | 6 units with 0.2mm accuracy |
 
-In addition, I was responsible for a lot of the development of the "flight code" in the chaser satellite, check out [RPO Kit development](/blog/rpo-kit-development)!
+For more details about this check out [Cosmic Lab](https://lunasaspace.com/services/) at Lúnasa.
+
+My role in this project was designing the simulator running everything behind the scenes, doing all the frames transformations for transforming the RTN satellite positions into the actual position of the robots in the room and... *lots* of quaternion debugging... *too many* quaternion bugs. 
+
+> **Fun fact:** taking into account algebraic definition, storage order, function of rotation, handedness, and basis vector mapping, you can define a quaternion in 384 ways... And it seems like every person chooses a different convention!
+
+In addition, I was responsible for the lead algorithm and software developer for the Flight Code in the chaser satellite, check out [RPO Kit development](/work/rpo-kit-development)!
 
 ![Robotics Room](/assets/media/roboticsroom.png)

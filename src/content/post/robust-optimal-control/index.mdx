@@ -11,14 +11,18 @@ img: "/assets/media/roboticsroom.png"
 img_alt: "Robust Optimal Control"
 ---
 
-One of the coolest projects I have worked on!
+One of the coolest projects I have worked on! 
 
-This master’s thesis investigated the local reduction robust optimal control method for lunar landers, addressing challenges in achieving pinpoint landing. Robust optimal control methodologies, focusing on a novel local reduction approach, were proposed and investigated. The study demonstrated its applicability to soft landing scenarios, assessing accuracy and computational efficiency compared to state-of-the-art methods, and evaluated its ability to handle uncertainties in lunar landing.
-
-The thesis details the development of a nonlinear, non-convex trajectory optimization model, including validation and efforts to improve convergence. It identifies and characterizes main uncertainties in lunar landing, discussing their nature and best modeling strategies. The novel local reduction algorithm's properties such as convergence, scenario handling, and execution speed improvements are examined. Additionally, methods to propagate the trajectory in open-loop and closed-loop are analyzed using Monte Carlo simulations.
-
-Results show the proposed method significantly enhances landing accuracy, reducing the landing ellipse size by more than one order of magnitude in open-loop scenarios compared to the nominal case. It mitigates uncertainties, reducing the standard deviation by two orders of magnitude, and accurately predicts minimum fuel mass required in the worst case. It provides highly accurate predictions for disturbances in Monte Carlo simulations for each control input in near real-time, enabling numerous possibilities for real-time validation. For the closed-loop approach, the method indicates that, with improved execution speed to run in decreasing horizon, pinpoint landing accuracy within centimeters is achievable.
-
+This master’s thesis investigated the local reduction robust optimal control method for lunar landers, addressing challenges in achieving pinpoint landing. Robust optimal control methodologies, focusing on a novel local reduction approach, were proposed and investigated. The study demonstrated its applicability to soft landing scenarios, assessing accuracy and computational efficiency compared to state-of-the-art methods, and evaluated its ability to handle uncertainties in lunar landing.  
+  
+The thesis details the development of a nonlinear, non-convex trajectory optimization model, including validation and efforts to improve convergence. It identifies and characterizes main uncertainties in lunar landing, discussing their nature and best modeling strategies. The novel local reduction algorithm's properties such as convergence, scenario handling, and execution speed improvements are examined. Additionally, methods to propagate the trajectory in open-loop and closed-loop are analyzed using Monte Carlo simulations.  
+  
+Results show the proposed method significantly enhances landing accuracy, reducing the landing ellipse size by more than one order of magnitude in open-loop scenarios compared to the nominal case. It mitigates uncertainties, reducing the standard deviation by two orders of magnitude, and accurately predicts minimum fuel mass required in the worst case. It provides highly accurate predictions for disturbances in Monte Carlo simulations for each control input in near real-time, enabling numerous possibilities for real-time validation. For the closed-loop approach, the method indicates that, with improved execution speed to run in decreasing horizon, pinpoint landing accuracy within centimeters is achievable.  
+  
 The thesis explores new research avenues and potential applications of the local reduction method beyond soft landing, including neural network training, accurate real-time validation and verification, and robust, adaptable trajectory planning in unforeseen scenarios.
 
-<video controls src="/assets/media/mastersthesisvid.mp4" width="100%"></video>
+*This video shows one of the generated trajectories with a quick viewing tool I created in Makie.jl*
+
+<video controls src="/assets/media/mastersthesisvid.mp4" width="100%" autoplay loop muted></video>
+
+You can read the full master's thesis here: [Local Reduction For Robust Optimal Control](/assets/documents/yagomolano_masters_thesis.pdf)

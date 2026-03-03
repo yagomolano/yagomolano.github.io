@@ -37,148 +37,35 @@ const filtered = headings.filter((h) => h.depth <= 3);
   </div>
 
   <!-- Main container -->
-  <div class="relative site-container mx-auto my-8">
-    <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
-      <!-- Left TOC - Fixed on desktop -->
-      <aside class="relative hidden lg:block lg:w-40 xl:w-50 flex-shrink-0">
-        <div class="toc-sticky-wrapper">
-          <Toc headings={filtered} />
-        </div>
-      </aside>
+  <div
+    class="relative site-container mx-auto my-8 min-h-[60vh] flex flex-col items-center justify-center text-center"
+  >
+    <div data-aos="fade-up-xs" data-aos-duration="600" data-aos-once="true">
+      <h1
+        class="text-4xl md:text-5xl font-brand mb-6 text-primary dark:text-primary-dark"
+      >
+        In Progress
+      </h1>
+      <p
+        class="text-lg text-neutral-600 dark:text-neutral-400 max-w-lg mx-auto mb-8"
+      >
+        I am still working on putting this section together. Check back soon for
+        my full About page!
+      </p>
 
-      <!-- Right main content - Adaptive width -->
-      <main class="relative flex-1 min-w-0 w-full lg:max-w-none">
-        <div
-          class="w-full"
-          data-aos="fade-up-xs"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          <h2
-            id="about-me"
-            class="text-2xl font-brand tracking-tight sm:text-3xl lg:text-4xl"
-          >
-            About Me
-          </h2>
-          <div
-            class="w-full border-b-1 border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-4 mb-8"
-          >
-          </div>
-        </div>
-
-        <p
-          class="text-base mt-2 mb-2 text-neutral-700 dark:text-neutral-300 leading-relaxed"
-          data-aos="fade-up-xs"
-          data-aos-delay="200"
-          data-aos-duration="500"
-          data-aos-once="true"
-        >
-          I'm Yago, a futurist who found his calling in the precision of Guidance, Navigation, and Control (GNC) engineering. Currently, I'm at Lúnasa, where I develop the autonomous brains for the next generation of space robotics—specifically, the high-precision algorithms enabling complex satellite rendezvous and docking missions.
-        </p>
-
-        <div
-          class="w-full border-b-1 border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-4 mb-8"
-        >
-        </div>
-
-        <div
-          class="w-full border-b-1 border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-12 mb-12"
-        >
-        </div>
-        <section class="experience">
-          <h2
-            id="experience"
-            class="mt-12 mb-4 text-[28px] text-neutral-800 dark:text-neutral-200 font-brand"
-            data-aos="fade-up-xs"
-            data-aos-duration="500"
-            data-aos-once="true"
-          >
-            Experience
-          </h2>
-          <div
-            class="px-5 py-10"
-            data-aos="fade-up-xs"
-            data-aos-delay="100"
-            data-aos-duration="600"
-            data-aos-once="true"
-          >
-            {
-              experiences.map((experience, index) => {
-                return (
-                  <div
-                    class="pb-10 border-l border-dashed border-gray-200 last:border-l-0 dark:border-neutral-500"
-                    data-aos="fade-up-xs"
-                    data-aos-delay={200 + index * 100}
-                    data-aos-duration="500"
-                    data-aos-once="true"
-                  >
-                    <AboutExperience
-                      dates={experience.dates}
-                      role={experience.role}
-                      company={experience.company}
-                      description={experience.description}
-                      logo={experience.logo}
-                    />
-                  </div>
-                );
-              })
-            }
-          </div>
-        </section>
-        <div
-          class="w-full border-b-1 border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-12 mb-12"
-        >
-        </div>
-
-        <div class="prose dark:prose-invert max-w-none prose-sm sm:prose-base">
-          <AboutHobbies />
-        </div>
-
-        <!-- Social Buttons at bottom -->
-        <div
-          class="social mt-12"
-          data-aos="fade-up-xs"
-          data-aos-delay="300"
-          data-aos-duration="600"
-          data-aos-once="true"
-        >
-          <div
-            class="social-list flex flex-wrap gap-2 items-center justify-start mt-6 mb-8"
-          >
-            {
-              social
-                .filter((item: any) => item.isShow !== false)
-                .map((item: any, index) => (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-item relative group overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-2 hover:rotate-[-6deg] hover:shadow-lg"
-                    data-aos="fade-up-xs"
-                    data-aos-delay={400 + index * 50}
-                    data-aos-duration="400"
-                    data-aos-once="true"
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      class="w-[96px] h-[96px] rounded-xl object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div class="absolute bottom-[10px] left-[12px] z-10">
-                      <div class="social-name font-semibold text-[10px] text-white drop-shadow-md">
-                        {item.name}
-                      </div>
-                      <div class="social-username text-[9px] text-white/85 drop-shadow-sm">
-                        @{item.username}
-                      </div>
-                    </div>
-                  </a>
-                ))
-            }
-          </div>
-        </div>
-      </main>
+      <a
+        href="/"
+        class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-strong dark:bg-primary-dark transition-colors duration-300"
+      >
+        Return Home
+      </a>
     </div>
+
+    <!-- Hidden original content 
+    <div class="hidden">
+      -- Original content kept hidden for later --
+    </div>
+    -->
   </div>
 </Layout>
 
