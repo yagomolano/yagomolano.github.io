@@ -14,15 +14,15 @@ export const siteConfig = {
 		medium: "referral",
 		campaign: "navigation",
 	},
-	meta:{
+	meta: {
 		title: "Yago Molano Portfolio",
 		description: "I am Yago, a futurist turned by chance or fate into a guidance, navigation and control engineer! I am currently working in space robotics at Lunasa.",
 		keywords: "GNC engineer, space robotics, control theory, optimization, portfolio",
-		image: `${SITE_URL}/og.jpg`,
+		image: `${SITE_URL}/og.png`,
 		twitterHandle: "yagomolano",
 	},
 	// social links
-	social:{
+	social: {
 		twitter: "https://x.com/yagomolano",
 		twitterName: "yagomolano",
 		github: "https://github.com/yagomolano",
