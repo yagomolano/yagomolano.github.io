@@ -1,6 +1,6 @@
 ---
 title: Local Reduction for Robust Optimal Control
-publishDate: 2024-04-01
+publishDate: 2024-06-12
 description: Master's thesis investigating local reduction robust optimal control methods for lunar landers.
 tags:
   - Control Theory
@@ -11,15 +11,15 @@ img: "/assets/media/roboticsroom.png"
 img_alt: "Robust Optimal Control"
 ---
 
-One of the coolest projects I have worked on! 
+One of the coolest projects I've worked on! 
 
-This master’s thesis investigated the local reduction robust optimal control method for lunar landers, addressing challenges in achieving pinpoint landing. Robust optimal control methodologies, focusing on a novel local reduction approach, were proposed and investigated. The study demonstrated its applicability to soft landing scenarios, assessing accuracy and computational efficiency compared to state-of-the-art methods, and evaluated its ability to handle uncertainties in lunar landing.  
-  
-The thesis details the development of a nonlinear, non-convex trajectory optimization model, including validation and efforts to improve convergence. It identifies and characterizes main uncertainties in lunar landing, discussing their nature and best modeling strategies. The novel local reduction algorithm's properties such as convergence, scenario handling, and execution speed improvements are examined. Additionally, methods to propagate the trajectory in open-loop and closed-loop are analyzed using Monte Carlo simulations.  
-  
-Results show the proposed method significantly enhances landing accuracy, reducing the landing ellipse size by more than one order of magnitude in open-loop scenarios compared to the nominal case. It mitigates uncertainties, reducing the standard deviation by two orders of magnitude, and accurately predicts minimum fuel mass required in the worst case. It provides highly accurate predictions for disturbances in Monte Carlo simulations for each control input in near real-time, enabling numerous possibilities for real-time validation. For the closed-loop approach, the method indicates that, with improved execution speed to run in decreasing horizon, pinpoint landing accuracy within centimeters is achievable.  
-  
-The thesis explores new research avenues and potential applications of the local reduction method beyond soft landing, including neural network training, accurate real-time validation and verification, and robust, adaptable trajectory planning in unforeseen scenarios.
+This master's thesis tackled robust optimal control for lunar landers, specifically, how to achieve pinpoint landing despite real-world uncertainties. I proposed and investigated a novel local reduction approach, demonstrating its applicability to soft landing scenarios and benchmarking accuracy and computational efficiency against state-of-the-art methods.
+
+The work covers the development of a nonlinear, non-convex trajectory optimisation model, including convergence analysis and validation. It characterises the key uncertainties in lunar landing and their best modelling strategies, then examines the local reduction algorithm's convergence, scenario handling and speed. Open-loop and closed-loop trajectory propagation are evaluated through Monte Carlo simulations.
+
+**Key results:** the method reduces the landing ellipse by over an order of magnitude in open loop and cuts the standard deviation by two orders of magnitude. It accurately predicts worst-case fuel requirements and provides near-real-time disturbance predictions for each control input — opening up real-time validation possibilities. In closed loop, centimetre-level pinpoint landing accuracy is achievable with a decreasing-horizon implementation.
+
+Beyond lunar landing, the thesis explores applications including neural network training, real-time V&V, and robust trajectory planning for unforeseen scenarios.
 
 *This video shows one of the generated trajectories with a quick viewing tool I created in Makie.jl*
 

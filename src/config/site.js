@@ -16,7 +16,7 @@ export const siteConfig = {
 	},
 	meta: {
 		title: "Yago Molano Portfolio",
-		description: "I am Yago, a futurist turned by chance or fate into a guidance, navigation and control engineer! I am currently working in space robotics at Lunasa.",
+		description: "I'm Yago, a futurist turned, by chance or fate, into a GNC engineer. Currently building autonomous space robotics at Lúnasa.",
 		keywords: "GNC engineer, space robotics, control theory, optimization, portfolio",
 		image: `${SITE_URL}/og.png`,
 		twitterHandle: "yagomolano",
@@ -27,7 +27,7 @@ export const siteConfig = {
 		twitterName: "yagomolano",
 		github: "https://github.com/yagomolano",
 		blog: "https://yagomolano.github.io",
-		linkedin: "https://www.linkedin.com/in/yago-molano/"
+		linkedin: "https://www.linkedin.com/in/yagomolano/"
 	},
 };
 
